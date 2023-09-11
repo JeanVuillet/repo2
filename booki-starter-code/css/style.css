@@ -22,12 +22,7 @@ body {
   justify-content: center;
 }
 
-.main-container {
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 50px;
-  box-sizing: border-box;
-}
+
 
 a {
   color: inherit;
@@ -56,13 +51,17 @@ a {
 .neutral-star {
   color: var(--main-bg-color);
 }
-
+h3{
+  
+  padding:0.5rem;
+}
 /********************************* HEADER *********************************/
 
 body{
 
 }
 .Header {
+  border:solid 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +69,7 @@ body{
 
 
  
-  margin-top: 50px;
+  margin-top: 10px;
   
  
 
@@ -86,12 +85,13 @@ width:5rem;
 }
 /*****Nav Hebergement-Activités********/
     .Header__hebAct {
-      font-size: 2rem;
+     
+      font-size: 1rem;
     margin-right: 20px;
     padding: 30px;
     display: flex;
     gap: 25px;
-    align-items: center;
+    align-items: flex-start;
 
     
     }
@@ -100,35 +100,49 @@ width:5rem;
 
 
 
-    .Header__hebAct  :hover {
-    border-top: 5px solid #0065fc;
+    .Header__hebAct >* {
+    border-top: 5px solid white;
+    }
+    .Header__hebAct>*:hover{
+  border-top: 5px solid #0065FC;
+  color:#0065FC;
     }
 
 /*******************************DIV RECHERCHE VILLE****************************************************/
 
 /*****Formulaire Recherche******/
 
-.TrouvezHebergement{
+.TrouvezHebergements{
+
   display:flex;
   flex-direction:column;
-
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-around;
  
 
- height:200px;
+ height:250px;
 
 
 
 }
+.TrouvezHebergements__text{
+
+  height: 4rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:0.5rem;
+}
 
     .TrouvezHebergements__form {
-  margin-left:2rem;
+  
     height:20%;
 
     display: flex;
     border-radius: 0 2rem 2rem 0;
     width: fit-content;
     align-items: center;
+    justify-content: center;
     font-size: 100%;
 
     }
@@ -148,6 +162,7 @@ padding:2px;
           display:flex;
           flex-direction:column;
           align-items: center;
+          justify-content: center;
 
            height:100%;
           color: black;
@@ -155,7 +170,7 @@ padding:2px;
 
         background-color: #f2f2f2;
         padding: 1rem;
-        border: solid 1px;
+        border: solid 1px #f2f2f2;
 
       
         border-top-left-radius: 1rem;
@@ -165,9 +180,15 @@ padding:2px;
         .TrouvezHebergements__form__input {
 
         height:100%;
-        border: solid 1px;
+        border: solid 1px #f2f2f2;
+        font-weight: bold;
+        }
+        ::placeholder{
+          color: black;
+          font-weight: bold;
         }
         .TrouvezHebergements__form__btnRecherche{
+          border:none;
           color: white;
           font-size: large;
           font-weight: bold;
@@ -200,6 +221,7 @@ padding:2px;
     gap: 10px;
     }
         .TrouvezHebergements__filtres__button {
+          background-color: white;
           padding:0.5rem;
           
         
@@ -207,6 +229,7 @@ padding:2px;
         align-items: center;
         gap: 5px;
         border-radius: 2rem 2rem 2rem 2rem;
+        border:solid 1px #f2f2f2;
         }
         .TrouvezHebergements__filtres  :hover {
         
@@ -215,6 +238,9 @@ padding:2px;
         .TrouvezHebergements__filtres > p {
         font-weight: bold;
         }
+        .TrouvezHebergements__filtres__button>p{
+          font-weight: bold;
+        }
         .TrouvezHebergements__logementsDispo{
             display: flex;
             justify-content: flex-start;
@@ -222,6 +248,7 @@ padding:2px;
 
         }
         .TrouvezHebergements__logementsDispo i{
+          margin:0.2rem;
           display:flex;
           flex-direction: column;
           justify-content: center;
@@ -236,8 +263,8 @@ padding:2px;
         }
        
           .TrouvezHebergements__logementsDispo p{
-         
-          margin-left: 1rem;
+
+          margin-left: 0rem;
         }
 
 /*fin TrouvzHebergement*/
@@ -319,19 +346,30 @@ padding:2px;
                         padding-left: 0;
                         }
                     .Hebergements__listeG__cards__link__hotel__text {
-
+                   
                     height:30%;
             
                         }
                             .Hebergements__listeG__cards__link__hotel__text__title{
-                        
+                             
                         
                         }
                             .Hebergements__listeG__cards__link__hotel__text__prix{
-                                
+                              align-items: space-between;
+                                height:40%;
+                     
                             }
+
                             .Hebergements__listeG__cards__link__hotel__text__cardating{
-                                
+                             padding-left:0px;
+                    
+                
+                            display:flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                      
+                          
+
                             }
                 .Hebergements__listeG__afficherPlus{
                             font-weight: bold;
@@ -404,8 +442,8 @@ padding:2px;
                     .Hebergements__populaire__container__link__hotel__img{
                         padding: 0.5rem;
                         object-fit:fill;
-                        border-radius: 2rem 2rem 0rem 0rem;
-                        width: 50%;
+                        border-radius: 2rem 0rem 0rem 2rem;
+                        width: 25%;
                         height:10rem;
                     }
 
