@@ -146,8 +146,8 @@ gap:0.5rem;
 }
 
     .TrouvezHebergements__form {
-  
-    height:20%;
+  border:solid 5px;
+    height:10%;
     margin:0.2rem;
     display: flex;
     justify-content: center;
@@ -160,9 +160,9 @@ gap:0.5rem;
  *
  #TrouvezHebergements__form___recherche{
   /* background-color: #f2f2f2; */
-height: 100%;
-font-size: 180%;
-padding:2px;
+
+
+padding:0.2px;
  }
    
         /**icone**/
@@ -170,7 +170,7 @@ padding:2px;
         .fa-location-dot {
           
          
-        
+        border:solid red 5px;
          
           display:flex;
           flex-direction:row;
