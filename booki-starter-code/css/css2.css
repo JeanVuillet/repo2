@@ -1,0 +1,664 @@
+/****** General ***********/
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+  
+  :root {
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
+  }
+  
+  .fa-solid {
+    color: var(--main-color);
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .section-title {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  
+  
+  .card img {
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 16px;
+  }
+  
+  .euro {
+    font-weight: 700;
+  }
+  
+  .neutral-star {
+    color: var(--main-bg-color);
+  }
+  
+  /********************************* HEADER *********************************/
+  
+  body{
+  
+  }
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+  
+   
+    margin-top: 50px;
+    
+   
+  
+  
+   
+  }
+  
+  .Header__logo img{
+  
+  width:5rem;
+  
+  
+  }
+  /*****Nav Hebergement-Activités********/
+      .Header__hebAct {
+        font-size: 2rem;
+      margin-right: 20px;
+      padding: 30px;
+      display: flex;
+      gap: 25px;
+      align-items: center;
+  
+      
+      }
+  
+  
+  
+  
+  
+      .Header__hebAct  :hover {
+      border-top: 5px solid #0065fc;
+      }
+  
+  /*******************************DIV RECHERCHE VILLE****************************************************/
+  
+  /*****Formulaire Recherche******/
+  
+  .TrouvezHebergement{
+    display:flex;
+    flex-direction:column;
+  
+    justify-content: space-between;
+   
+  
+   height:200px;
+  
+  
+  
+  }
+  
+      .TrouvezHebergements__form {
+    margin-left:2rem;
+      height:20%;
+  
+      display: flex;
+      border-radius: 0 2rem 2rem 0;
+      width: fit-content;
+      align-items: center;
+      font-size: 100%;
+  
+      }
+   *
+   #TrouvezHebergements__form___recherche{
+    background-color: #f2f2f2;
+  height: 100%;
+  font-size: 180%;
+  padding:2px;
+   }
+     
+          /**icone**/
+  
+          .fa-location-dot {
+  
+            background-color: #f2f2f2;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+  
+             height:100%;
+            color: black;
+          
+  
+          background-color: #f2f2f2;
+          padding: 1rem;
+          border: solid 1px;
+  
+        
+          border-top-left-radius: 1rem;
+          border-bottom-left-radius: 1rem;
+          }
+          /**saisie input de la ville**/
+          .TrouvezHebergements__form__input {
+  
+          height:100%;
+          border: solid 1px;
+          }
+          .TrouvezHebergements__form__btnRecherche{
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            background-color: #0065fc;
+            height: 100%;
+            border-radius:0 2rem 2rem 0;
+            padding:0.5rem;
+          }
+          #TrouvezHebergements__form__btnRecherche__loupe{
+        
+          display: none;
+          }
+  
+          .TrouvezHebergements__form__btnRecherche__recherche {
+            
+           height: 100%;
+  
+        
+          border-radius: 0 2rem 2rem 0;
+          }
+  
+     
+      .TrouvezHebergements__filtres {
+        height:20%;
+      
+   
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      }
+          .TrouvezHebergements__filtres__button {
+            padding:0.5rem;
+            
+          
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          border-radius: 2rem 2rem 2rem 2rem;
+          }
+          .TrouvezHebergements__filtres  :hover {
+          
+          background-color: #deebff;
+          }
+          .TrouvezHebergements__filtres > p {
+          font-weight: bold;
+          }
+          .TrouvezHebergements__logementsDispo{
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+  
+          }
+          .TrouvezHebergements__logementsDispo i{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+             padding:4px;
+             padding-left:8px;
+             padding-right: 8px;
+  
+             border:solid 0.1rem  #f2f2f2;
+             border-radius: 90%;
+  
+            
+          }
+         
+            .TrouvezHebergements__logementsDispo p{
+           
+            margin-left: 1rem;
+          }
+  
+  /*fin TrouvzHebergement*/
+  
+  /*********************** MAIN ***********************************/
+  .main {
+      height:1200px;
+      margin:auto;
+     
+  }
+  /*******************PARTIE I HEBERGEMENTS***********************/
+  .Hebergements{
+   
+      display:flex;
+      height: 60%;
+      justify-content:space-between
+     
+  }
+  /*****Hebergement Liste Generale******/
+      .Hebergements__listeG {
+  
+        background-color:  #f2f2f2;
+        border-radius: 2rem 2rem 2rem 2rem;
+      display: flex;
+      width: 66%;
+      height: 100%;
+      flex-wrap: wrap;
+      
+      }
+          .Hebergements__listeG__titre{
+            padding: 1rem;
+          }
+          .Hebergements__listeG__cards {
+        
+          height: 80%;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          
+         
+          
+  
+  
+          }
+          .Hebergements__listeG__cards__link{
+  
+            padding:1rem;
+              height:50%;
+              width:33%;
+      
+          }
+  
+  
+              /*.Hebergements__listeG__cards__hotel*/
+              .Hebergements__listeG__cards__link__hotel{
+                background-color: white;
+                padding:0.3rem;
+  
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  border-radius: 2rem 2rem 2rem 2rem;
+                
+                  height: 100%;
+  
+              }
+                  /* .Hebergements__listeG__cards__link__hotel__link*/
+                  .Hebergements__listeG__cards__link__hotel{
+                      
+                  
+  
+                  }
+                  
+                      .Hebergements__listeG__cards__link__hotel__img {
+                          border-radius: 2rem 2rem 0rem 0rem;
+                          max-width: 100%;
+                          height: 20%;
+                          object-fit:cover;
+                          padding-left: 0;
+                          }
+                      .Hebergements__listeG__cards__link__hotel__text {
+  
+                      height:20%;
+              
+                          }
+                              .Hebergements__listeG__cards__link__hotel__text__title{
+                          
+                          
+                          }
+                              .Hebergements__listeG__cards__link__hotel__text__prix{
+                                  
+                              }
+                              .Hebergements__listeG__cards__link__hotel__text__cardating{
+                                  
+                              }
+                  .Hebergements__listeG__afficherPlus{
+                              font-weight: bold;
+                              }       
+                  
+              
+  /*****************Populaires*************************/
+      .Hebergements__populaire {
+  
+      display: flex;
+      flex-direction: column;
+  
+      width: 32%;
+      height:100%;
+      border-radius: 2rem 2rem 2rem 2rem;
+      background-color:#f2f2f2;
+      
+      }
+          .Hebergements__populaire__titreEtLogo{
+  
+      padding:2rem;        
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+  
+          }
+  
+              .Hebergements__populaire__titreEtLogo__titre{
+                 
+                  
+              }
+              /****logo***/
+         
+  
+          .Hebergements__populaire__container{
+  
+  
+              display:flex;
+              flex-direction:column;
+              flex-wrap: wrap;
+          
+             
+              height:80%;
+  
+          }
+          .Hebergements__populaire__container__link{
+            display:flex;
+            flex-direction:column;
+            flex-wrap: wrap;  
+         
+  
+          height: 33%;
+      
+  
+          }
+              .Hebergements__populaire__container__link__hotel{
+                display:flex;
+                flex-direction:column;
+                flex-wrap: wrap;
+                background-color: white;
+              border-radius: 2rem 2rem 2rem 2rem;
+              display:flex;
+              flex-direction: row;
+              width: 100%;
+  
+              }
+                  
+              
+                      .Hebergements__populaire__container__link__hotel__img{
+                          padding: 0.5rem;
+                          object-fit:fill;
+                          border-radius: 2rem 2rem 0rem 0rem;
+                          width: 50%;
+                          height:10rem;
+                      }
+  
+                      .Hebergements__populaire__container__link__hotel__text{
+                        padding:0.5rem;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: space-between;
+                          width:50%;
+                      }
+                      .Hebergements__populaire__container__link__hotel__text__titrePrix{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start; 
+                      }
+                      .Hebergements__populaire__container__link__hotel__text__prix{
+                      
+                      }
+                      .Hebergements__populaire__container__link__hotel__text__cardating{
+                    
+  
+                      }
+  
+  
+  
+  
+  /***************************MAIN PARTIE II Activites*********************************/
+  
+  .Activites{
+      height: 40%;
+      padding-left:0px;
+  
+  
+  }
+      .Activites__container{
+        padding-left: 0px;
+  
+        
+          height: 90%;
+  
+          display: flex;
+      
+      }
+      
+              .Activites__container__link{
+              border-radius: 2rem 2rem 2rem 2rem;
+              padding: 1rem;
+                margin :1rem;
+                height: 80%;
+                width: 25%;
+                background-color: #f2f2f2;
+  
+              }
+                .Activites__container__link__imgText{
+                  border-radius: 2rem 2rem ;
+                background-color: white;
+                  padding:0rem;
+  
+                  height: 100%;
+                  width: 100%;
+  
+                }
+                  .Activites__container__link__imgText__img{
+                    border:solid black 2px;
+                    padding:0rem;
+                      border-radius: 2rem 2rem 0rem 0rem;
+                      width: 100%;
+                      height: 80%;
+                      object-fit:cover;
+  
+                      
+                  }
+                  .Activites__container__link__imgText__text{
+                
+  
+                  }
+  
+  
+  .sectionActivites {
+    display: flex;
+    height: 30rem;
+  }
+  /*.Card_Activité_1{
+      background-color: green;
+  }*/
+  .Card_Activité_1 > a > img {
+    border-radius: 2rem 2rem 0rem 0rem;
+    width: 100%;
+    height: 60%;
+  }
+  
+  .sectionActivites img {
+    
+  }
+  
+  /***************************FOOTER*******************************************/
+  
+  .Footer {
+    background-color:#f2f2f2;
+    height:15rem;
+  
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  
+  
+      .Footer div {
+      padding-right: 2rem;
+      padding:0.5rem;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+      width:30%;
+      }
+      .Footer div>*{
+        padding: 0.5rem;
+      }
+      .Footer__nosHebergements {
+      display: flex;
+      flex-direction: column;
+      }
+  
+      .Footer__assistance {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  
+  
+  
+  /* Le code ci-dessous correspond à la version responsive uniquement */
+  
+  /****** Media queries ***********/
+  /* Medium devices (tablets, less/equal than 1024px) */
+  
+    @media screen and (max-width: 1024px) {
+  
+      body{
+        height:1400px;
+      }
+  .Header{
+    height: 4%;
+  }
+  .TrouvezHebergement{
+    height :20%;
+  }
+    .main{
+      border:solid yellow 3px;
+      height:88%;
+    }
+    .Hebergements {
+      background-color: #0065fc;
+  
+     display:flex;
+     flex-direction: column;
+      
+    }
+    .Hebergements__listeG{
+    width:100%;
+  
+    margin:2rem;
+    }
+    .Hebergements__listeG__cards{
+    border:solid 3px;
+    }
+    .Hebergements__listeG__cards__link{
+      height: 50%;
+    }
+    .Hebergements__listeG__cards__link__hotel{
+      border:solid red 3px;
+      height:100%;
+     
+    }
+    .Hebergements__listeG__cards__link__hotel__img{
+      height:6rem;
+  
+    }
+    .Hebergements__populaire{
+      margin:1rem;
+      height:50%;
+      width:100%;
+  
+    }
+    .Hebergements__populaire__container{
+      display:flex;
+      flex-direction: row;
+    }
+    .Activites{
+      border: solid blue 3px;
+      height:20%;
+    }
+  
+   .Footer{
+    height: 8%;
+   }
+  
+  /* Small devices (phones, less than 768px) */
+  @media only screen and (max-width: 575.98px) {
+  
+    #loupe {
+      display: flex;
+    }
+  
+    #recherche {
+      /*  visibility:hidden;*/
+      display: none;
+    }
+  
+    .Hebergements {
+      display:flex;
+      flex-direction:column;
+       
+     }
+   
+     .Hebergements__listeG{
+       display:flex;
+       flex-direction: column;
+     }
+     .Hebergements__listeG__cards{
+      display:flex;
+      flex-direction: column;
+     }
+   
+   
+     .Hebergements__populaire {
+       width: 100%;
+       margin-top: 50px;
+       flex-direction:column;
+     }
+   
+     .Hebergements__populaire__container {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       background-color: pink;
+      }
+     }
+   
+     .Hebergements__populaire__container__link{
+       width: 30%;
+     }
+   
+     .Hebergements__populaire__container__link__hotel>h3{
+       font-size: 14px;
+     }
+   
+     .Hebergements__populaire__container__link__hotel>p {
+       font-size: 13px;
+     }
+  }
+  
+  
+  
