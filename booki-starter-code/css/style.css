@@ -3,7 +3,7 @@
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   margin: 0;
-  padding-left: 0.5rem;
+
 }
 
 :root {
@@ -17,6 +17,7 @@
 }
 
 body {
+  margin:0rem 2rem 0rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,8 +60,11 @@ h3{
 
 body{
 
+
 }
 .Header {
+  margin-left:1rem;
+ padding-left: 0rem;
   border:solid 1px;
   display: flex;
   justify-content: space-between;
@@ -78,7 +82,7 @@ body{
 }
 
 .Header__logo img{
-
+padding-left: 0rem;
 width:5rem;
 
 
@@ -113,11 +117,14 @@ width:5rem;
 /*****Formulaire Recherche******/
 
 .TrouvezHebergements{
-
+  padding-left: 0px;
+  border:solid 2px;
+  margin-left: 1rem;
   display:flex;
   flex-direction:column;
   align-items: flex-start;
   justify-content: space-around;
+
  
 
  height:250px;
@@ -135,6 +142,7 @@ width:5rem;
 }
 
     .TrouvezHebergements__form {
+      
   
     height:20%;
 
@@ -151,7 +159,7 @@ width:5rem;
   background-color: #f2f2f2;
 height: 100%;
 font-size: 180%;
-padding:2px;
+
  }
    
         /**icone**/
@@ -277,6 +285,8 @@ padding:2px;
 }
 /*******************PARTIE I HEBERGEMENTS***********************/
 .Hebergements{
+  border:solid 3Px;
+  padding-left: 0;
  
     display:flex;
     height: 60%;
@@ -296,11 +306,11 @@ padding:2px;
     }
         .Hebergements__listeG__titre{
           padding: 1rem;
-          border:solid 3px;
+
         }
         .Hebergements__listeG__cards {
         padding-left: 0;
-          border:solid 3px;
+
         height: 80%;
         display: flex;
         flex-wrap: wrap;
