@@ -711,6 +711,7 @@ padding:2px;
  
    .Hebergements__populaire__container__link__hotel>p {
      font-size: 6px;
+     border: solid 1Px;
    }
 }
 
