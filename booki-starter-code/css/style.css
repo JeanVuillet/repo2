@@ -2,9 +2,9 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
-  /* box-sizing: border-box; */
-  /* margin: 0; */
-  /* padding-left: 0.5rem; */
+  box-sizing: border-box;
+  margin: 0;
+
 }
 
 :root {
@@ -18,17 +18,13 @@
 }
 
 body {
- display: flex;
- flex-direction: column;
- /* justify-content: center; */
+  margin:0rem 2rem 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.main-container {
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 50px;
-  box-sizing: border-box;
-}
+
 
 a {
   color: inherit;
@@ -58,45 +54,42 @@ a {
 .neutral-star {
   color: var(--main-bg-color);
 }
-h2{font-size: 25px;}
-
-html, body { height: 100%; }
 
 /********************************* HEADER *********************************/
 
-
-
-
-
-
-body>*{
+body{
 
 }
 .Header {
-
-  border:solid black 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 4rem;
+  
+
+
+ 
+  margin-top: 50px;
+  
+ 
+
+
+ 
 }
 
 .Header__logo img{
-
+padding-left: 0rem;
 width:5rem;
 
 
 }
 /*****Nav Hebergement-Activités********/
     .Header__hebAct {
-
-      font-size: 1.5rem;
+      font-size: 2rem;
     margin-right: 20px;
     padding: 30px;
     display: flex;
     gap: 25px;
-    align-items: flex-start;
-
+    align-items: center;
 
     
     }
@@ -107,8 +100,12 @@ width:5rem;
       }
 
 
-    .Header__hebAct  :hover {
-    border-top: 5px solid #0065fc;
+    .Header__hebAct >* {
+    border-top: 5px solid white;
+    }
+    .Header__hebAct>*:hover{
+  border-top: 5px solid #0065FC;
+  color:#0065FC;
     }
 
 /*******************************DIV RECHERCHE VILLE****************************************************/
@@ -116,21 +113,13 @@ width:5rem;
 /*****Formulaire Recherche******/
 
 .TrouvezHebergement{
-
-  
-  border: solid red 4px; 
-  
- 
-
- gap:10%;
-
   display:flex;
   flex-direction:column;
 
   justify-content: space-between;
  
 
-
+ height:200px;
 
 
 
@@ -144,25 +133,34 @@ justify-content:space-between;
 gap:0.5rem;
 
 }
+.TrouvezHebergements__text{
+
+  height: 4rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:0.5rem;
+}
 
     .TrouvezHebergements__form {
-  border:solid 5px;
-    height:10%;
-    margin:0.2rem;
+  margin-left:2rem;
+    height:20%;
+
     display: flex;
     justify-content: center;
     border-radius: 0 2rem 2rem 0;
     width: fit-content;
     align-items: center;
+    justify-content: center;
     font-size: 100%;
 
     }
  *
  #TrouvezHebergements__form___recherche{
-  /* background-color: #f2f2f2; */
-
-
-padding:0.2px;
+  background-color: #f2f2f2;
+height: 100%;
+font-size: 180%;
+padding:2px;
  }
    
         /**icone**/
@@ -175,6 +173,7 @@ padding:0.2px;
           display:flex;
           flex-direction:row;
           align-items: center;
+          justify-content: center;
 
            height:100%;
           color: black;
@@ -182,8 +181,7 @@ padding:0.2px;
 
         background-color: #f2f2f2;
         padding: 1rem;
-        border: solid #f2f2f2 1px;
-  
+        border: solid 1px;
 
       
         border-top-left-radius: 1rem;
@@ -193,15 +191,7 @@ padding:0.2px;
         .TrouvezHebergements__form__input {
          padding:1rem;
         height:100%;
-        border: solid #f2f2f2 1px;
-
-        color:black;
-        font-weight: bold;
-        }
-       ::placeholder{
-        color:black;
-        font-weight: bold;
-
+        border: solid 1px;
         }
         .TrouvezHebergements__form__btnRecherche{
           border:none;
@@ -279,7 +269,6 @@ padding:0.2px;
         }
        
           .TrouvezHebergements__logementsDispo p{
-            font-weight: bold;
          
           margin-left: 1rem;
         }
@@ -288,14 +277,13 @@ padding:0.2px;
 
 /*********************** MAIN ***********************************/
 .main {
-
-  height:1200px;
-  margin:auto;
+    height:1200px;
+    margin:auto;
    
 }
 /*******************PARTIE I HEBERGEMENTS***********************/
 .Hebergements{
-  border :solid green 10px;
+ 
     display:flex;
     height: 60%;
     justify-content:space-between
@@ -313,10 +301,10 @@ padding:0.2px;
     
     }
         .Hebergements__listeG__titre{
-         
+          padding: 1rem;
         }
         .Hebergements__listeG__cards {
-      border: solid yellow 5px;
+      
         height: 80%;
         display: flex;
         flex-wrap: wrap;
@@ -338,7 +326,6 @@ padding:0.2px;
 
             /*.Hebergements__listeG__cards__hotel*/
             .Hebergements__listeG__cards__link__hotel{
-              border: solid black 5px;
               background-color: white;
               padding:0.3rem;
 
@@ -367,18 +354,29 @@ padding:0.2px;
                         }
                     .Hebergements__listeG__cards__link__hotel__text {
 
-
+                    height:30%;
             
                         }
                             .Hebergements__listeG__cards__link__hotel__text__title{
-                        
+                             
                         
                         }
                             .Hebergements__listeG__cards__link__hotel__text__prix{
-                                
+                              align-items: space-between;
+                                height:40%;
+                     
                             }
+
                             .Hebergements__listeG__cards__link__hotel__text__cardating{
-                                
+                             padding-left:0px;
+                    
+                
+                            display:flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                      
+                          
+
                             }
                 .Hebergements__listeG__afficherPlus{
                             font-weight: bold;
@@ -428,6 +426,7 @@ padding:0.2px;
 
         }
         .Hebergements__populaire__container__link{
+          padding:1rem;
           display:flex;
           flex-direction: column;
     
@@ -456,14 +455,14 @@ padding:0.2px;
                     .Hebergements__populaire__container__link__hotel__img{
                         padding: 0.5rem;
                         object-fit:fill;
-                        border-radius: 2rem 0rem 0rem 2rem;
+                        border-radius: 2rem 2rem 0rem 0rem;
                         width: 50%;
                         height:10rem;
                     }
 
+
                     .Hebergements__populaire__container__link__hotel__text{
-                     margin:0;
-                     padding:0;
+                      padding:0.5rem;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around;
