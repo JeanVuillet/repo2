@@ -643,7 +643,7 @@ font-size: 180%;
     height:71%;
   }
   .Hebergements {
-border:solid 1px;
+
     height:68%;
     
 
@@ -654,9 +654,13 @@ border:solid 1px;
   }
   .Hebergements__listeG{
   width:100%;
-  height:65%;
+  height:67%;
 
  
+  }
+  .Hebergements__listeG__titre{
+    padding-top: 2rem;
+    padding-left:2rem;
   }
   .Hebergements__listeG__cards{
   
@@ -682,8 +686,13 @@ border:solid 1px;
     height:6rem;
 
   }
+  .Hebergements__listeG__afficherPlus{
+    border:solid 1px;
+    padding-left:2rem;
+  }
   .Hebergements__populaire{
-
+  margin-top: 3rem;
+  margin-bottom: 2rem;
     height:33%;
     width:100%;
 
