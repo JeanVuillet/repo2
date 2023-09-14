@@ -663,7 +663,7 @@ font-size: 180%;
     padding-left:2rem;
   }
   .Hebergements__listeG__cards{
-  
+    height: 77%;
  /* border :solid blue 2px; */
  display:flex;
 
@@ -687,8 +687,9 @@ font-size: 180%;
 
   }
   .Hebergements__listeG__afficherPlus{
-    border:solid 0.062rem;
+
     padding-left:2rem;
+    padding-bottom: 2rem;
   }
   .Hebergements__populaire{
   margin-top: 3rem;
@@ -785,4 +786,3 @@ font-size: 180%;
 }
   }
 
- /* plz klhjlsqfd hjkjlhlksjhlfdk */
