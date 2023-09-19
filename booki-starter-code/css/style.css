@@ -464,7 +464,7 @@ height: 2rem;
 
                             .Hebergements__listeG__cards__link__hotel__text__cardating{
 
-                     
+                          
                            padding-top: 0.1rem;
                     
                 
@@ -849,7 +849,7 @@ body{
 .Header{
   margin:0rem;
   padding:0rem;
-  border:solid orange 3px;
+
   display:flex;
   flex-direction: column;
   justify-content: space-around;
@@ -891,11 +891,11 @@ justify-content: space-between;
   
 }
 .TrouvezHebergements__form{
-  border:solid red;
+
 }
 
 .TrouvezHebergements__form__btnRecherche{
-  border:solid green;
+
   width: 40px;
   height: 100%;
   border-radius: 1rem ;
@@ -974,7 +974,7 @@ padding:0.8;
     border: solid;
     flex-wrap: nowrap;
     width: 100%;
-    height: fit-content;
+    height: auto;
 
    }
    .Hebergements__listeG__cards__link{
@@ -986,10 +986,16 @@ padding:0.8;
     height: fit-content;
   }
   .Hebergements__listeG__cards__link__hotel__img{
-    height: 5rem;
+   height: 124px;
   }
- 
+ .Hebergements__listeG__cards__link__hotel__text{
+  padding:1rem;
+ }
+
+.Hebergements__listeG__cards__link__hotel__text__cardating{
+ padding-top: 1rem;}
    .Hebergements__populaire {
+    margin-top:0;
     border-radius: 0;
     border-top:0;
     height: fit-content;
@@ -1023,11 +1029,11 @@ height: fit-content;
     
  
     .Hebergements__populaire__container__link__hotel__img{
-height: 0.2rem;
+height:146px;
     }
 
-    .Hebergements__populaire__container__link__hotel__text{
-
+    .Hebergements__populaire__container__link__hotel__text__cardating{
+padding:1rem;
     }
    .Hebergements__populaire__container__link__hotel>h3{
     
@@ -1037,7 +1043,7 @@ height: 0.2rem;
    
    }
 .Hebergements__populaire__container__link__hotel__img{
-  height: 5rem;
+
 }
    .Activites{
 height: fit-content;
@@ -1047,26 +1053,31 @@ height: fit-content;
    }
    .Activites__container{
     border:solid yellow 4px;
-    height: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
    }
    .Activites__container__link{
+    padding:1rem;
+    margin :0rem;
     height: fit-content;
     display:flex;
     flex-direction: column;
     width: 100%;
    }
   .Activites__container__link__imgText__img{
-    height: 5rem;
+    height: 141px;
   }
    .Footer{
-
+ 
     height: fit-content;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0rem;
+    margin-left: 1.25rem;
+   }
+   .Footer div{
+    width: auto;
    }
 }
 
