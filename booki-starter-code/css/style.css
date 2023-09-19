@@ -802,6 +802,9 @@ padding-bottom: 1rem;
 .main{
   font-size:auto;
   border:solid green;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between !important;
 
 }
 
@@ -846,7 +849,7 @@ padding-bottom: 1rem;
 
     display:flex;
     flex-direction:column-reverse;
-    height:fit-content;
+    height:auto;
    }
 
  
