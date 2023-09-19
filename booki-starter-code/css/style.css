@@ -140,6 +140,7 @@ height: 2rem;
 /*****Formulaire Recherche******/
 
 .TrouvezHebergements{
+
   padding-left: 0rem;
 
   margin-left: 1rem;
@@ -155,7 +156,9 @@ height: 2rem;
 
 
 
+
 }
+
 .TrouvezHebergements__text{
 
   height: 4rem;
@@ -165,10 +168,12 @@ height: 2rem;
   gap:0.5rem;
 }
 
+
     .TrouvezHebergements__form {
       
-  
+
     /* height:20%; */
+
    width: 410px;
    height: 49px;
     display: flex;
@@ -209,9 +214,12 @@ height: 2rem;
         }
         /**saisie input de la ville**/
         .TrouvezHebergements__form__input {
+          color:blue;
+          border:solid red;
+          height:100% ;
           
        justify-content: center;
-        height:100%;
+
         width: 250px;
         /* width: 46%; */
         border: solid 0.06rem #f2f2f2;
@@ -224,9 +232,13 @@ height: 2rem;
           font-weight: bold;
           justify-content: center;
           text-align:  center;
+  
 
         }
+       
+
         .TrouvezHebergements__form__btnRecherche{
+      
           /* width: 35%; */
           width: 132px;
           border:none;
@@ -236,7 +248,7 @@ height: 2rem;
           background-color: #0065fc;
           height: 100%;
           border-radius:0 1rem 1rem 0;
-          padding:0.5rem;
+ 
         }
         #TrouvezHebergements__form__btnRecherche__loupe{
       
@@ -253,8 +265,9 @@ height: 2rem;
 
    
     .TrouvezHebergements__filtres {
-      height:20%;
-      width:55%;
+
+      padding-top:1rem;
+      width:60%;
       font-size: 21px;
       font-weight: bold;
  
@@ -279,19 +292,24 @@ height: 2rem;
         .TrouvezHebergements__filtres__buttons__button {
          
           background-color: white;
-          padding:1rem;
-       
+          
+         padding: 0.5rem;
+         gap:1rem;
+    margin-left:1rem;
+    
           font-size: 21px;
           font-weight: bold;
         
         display: flex;
-        gap:1rem;
+     
+ 
         align-items: center;
        
         border-radius: 2rem 2rem 2rem 2rem;
         border:solid 0.1rem #f2f2f2;
 
         }
+
         .TrouvezHebergements__filtres__buttons  :hover {
         
         background-color: #deebff;
@@ -346,7 +364,7 @@ height: 2rem;
 }
 /*****Hebergement Liste Generale******/
     .Hebergements__listeG {
-  border:solid;
+
       background-color:  #f2f2f2;
       border-radius: 1rem 1rem 1rem 1rem;
     display: flex;
@@ -358,8 +376,17 @@ height: 2rem;
     
     }
         .Hebergements__listeG__titre{
-          border:solid;
-          padding: 1rem;
+ 
+          display:flex;
+          flex-direction: column;
+  
+          justify-content:center;
+          margin-top:0 !important;
+          padding:32px;
+          line-height: 0rem;
+
+
+       
  
         }
         .Hebergements__listeG__cards {
@@ -415,11 +442,12 @@ height: 2rem;
                         padding-left: 0;
                         }
                     .Hebergements__listeG__cards__link__hotel__text {
+               
                       height: 100%;
-                    
+
                       display:flex;
                       flex-direction: column;
-                      justify-content: center;
+                      justify-content: space-around;
                     
                    padding-left:0.5rem;
            
@@ -450,6 +478,9 @@ height: 2rem;
                 .Hebergements__listeG__afficherPlus{
                             font-weight: bold;
                             padding-left: 1rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center ;
                             }       
                 
             
@@ -484,7 +515,7 @@ height: 2rem;
 
             .Hebergements__populaire__titreEtLogo{
 
-                height:11%
+              
             }
             /****logo***/
        
@@ -498,7 +529,7 @@ height: 2rem;
             justify-content: space-between;
         
            
-            height:89%;
+         
 
         }
         .Hebergements__populaire__container__link{
@@ -701,9 +732,11 @@ height: 2rem;
 .Header__hebAct{
   width:25%;
 }
-.TrouvezHebergement{
+.TrouvezHebergements__filtres{
+  width: 95%;
 
 }
+
   .main{
 
    
@@ -787,7 +820,7 @@ height: 2rem;
   
   }
   .Activites__container__link{
-    height:30%
+
 
   }
 .Activites__container__link__imgText__img{
