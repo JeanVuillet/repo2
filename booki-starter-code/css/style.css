@@ -301,7 +301,7 @@ height: 2rem;
           font-weight: bold;
         
         display: flex;
-     
+        justify-content: center;
  
         align-items: center;
        
@@ -381,8 +381,11 @@ height: 2rem;
           flex-direction: column;
   
           justify-content:center;
-          margin-top:0 !important;
-          padding:32px;
+          align-items: center;
+         
+          padding:0.6rem;
+          padding-left: 1rem;
+          padding-bottom: 0.3rem;
           line-height: 0rem;
 
 
@@ -830,7 +833,7 @@ height: 2rem;
  .Footer{
 
  }
-
+  }
 /* Small devices (phones, less than 768px) */
 
 @media only screen and (max-width: 575.98px) 
@@ -842,6 +845,7 @@ body{
 
  margin:0;
  padding:0;
+ max-width: 90%;
 }
 
 
@@ -849,11 +853,12 @@ body{
 .Header{
   margin:0rem;
   padding:0rem;
-
+ padding-top: 2rem;
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+  row-gap: 2rem;
 width: 100%;
 
 }
@@ -879,16 +884,24 @@ width: 100%;
 }
 .TrouvezHebergements{
   margin:0rem;
+  margin-top: 1.87rem;
   padding-left:0.5rem;
   padding-right: 0.5rem;
   width: 100%;
-height: fit-content;
+  height: auto;
 font-size: auto;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+align-items: center;
+gap:2.75rem;
 
   
+}
+.TrouvezHebergements__text{
+  margin-left:1rem;
+  width: auto;
+  height: auto;
 }
 .TrouvezHebergements__form{
 
@@ -896,31 +909,63 @@ justify-content: space-between;
 
 .TrouvezHebergements__form__btnRecherche{
 
-  width: 40px;
+ 
   height: 100%;
-  border-radius: 1rem ;
+
 }
 .TrouvezHebergements__filtres{
+  padding-top: 0rem;
+  gap:0rem;
   display:flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
-  width:100%;
+  margin-left:1rem;
+  row-gap: 1rem;
+
+;
+
  
+}
+.TrouvezHebergements__filtres__titre {
+  width: 90%;
+
+
 }
 
 
 .TrouvezHebergements__filtres__buttons{
-
+ padding:0rem;
+ row-gap: 1rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+
+  width: 100%;
+
+
+
 
 }
 .TrouvezHebergements__filtres__buttons__button{
-  width:40%;
-padding:0.8;
+
+
+padding:0rem;
+margin-left: 0rem;
+
+margin-right: 0.5rem;
+
+  /* white-space: no-wrap ; */
+width: 45%;
+  height: 50px;
+ 
+
+
 
 }
+
 .main{
+  margin-top: 2.18rem;
   font-size:auto;
   border:solid green;
 
@@ -994,7 +1039,10 @@ padding:0.8;
 
 .Hebergements__listeG__cards__link__hotel__text__cardating{
  padding-top: 1rem;}
+
+ 
    .Hebergements__populaire {
+    padding-top:1.9rem ;
     margin-top:0;
     border-radius: 0;
     border-top:0;
@@ -1004,7 +1052,12 @@ padding:0.8;
      width: 100%;
 
      flex-direction:column;
+     justify-content: space-between;
  
+   }
+   .Hebergements__populaire__titreEtLogo{
+ padding: 0;
+  
    }
  
    .Hebergements__populaire__container {
@@ -1070,7 +1123,7 @@ height: fit-content;
     height: 141px;
   }
    .Footer{
- 
+    margin-top:2.2rem;
     height: fit-content;
     display: flex;
     flex-direction: column;
