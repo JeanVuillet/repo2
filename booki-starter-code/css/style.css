@@ -756,6 +756,7 @@ height: 2rem;
   }
   .Hebergements__listeG{
   width:100%;
+
   
 
  
@@ -769,15 +770,15 @@ height: 2rem;
  /* border :solid blue 2px; */
  display:flex;
 
- justify-content:space-around;
+
  align-items: space-around;
   }
   .Hebergements__listeG__cards__link{
-  
+    width: 33%;
     padding:1rem;
 /* border:solid red; */
 
-    width: 30%;
+ 
   }
   .Hebergements__listeG__cards__link__hotel{
     /* border:solid rgb(255, 247, 0); */
@@ -787,6 +788,17 @@ height: 2rem;
   .Hebergements__listeG__cards__link__hotel__img{
     height:6rem;
 
+  }
+  .Hebergements__listeG__cards__link__hotel__text{
+  
+    row-gap: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    justify-content: space-between;
+  }
+  .Hebergements__listeG__cards__link__hotel__text__cardating{
+    padding: 0.5 ! important;
+ 
   }
   .Hebergements__listeG__afficherPlus{
 
