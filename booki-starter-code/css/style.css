@@ -33,7 +33,7 @@ a {
 
 .section-title {
   margin: 0;
-  font-size: 1.375rem;
+
 }
 
 
@@ -43,7 +43,7 @@ a {
 }
 
 .card-title {
-  font-size: 1rem;
+
 }
 
 .euro {
@@ -57,9 +57,12 @@ a {
 /********************************* HEADER *********************************/
 
 body{
+font-size: medium;
 
 
-
+}
+*{
+  font-size: medium;
 }
 .Header {
 
@@ -105,7 +108,7 @@ height: 2rem;
    
       height: 100%;
       width: 15%;
-      font-size: 1rem;
+
     margin-right: 1.25rem;
 
   
@@ -180,9 +183,9 @@ height: 2rem;
     border-radius: 0 2rem 2rem 0;
   
     align-items: center;
-    justify-content: fit-content;
+ 
 
-    font-size: 100%;
+
 
     }
  *
@@ -227,7 +230,7 @@ height: 2rem;
   
         }
         ::placeholder{
-          font-size: 21px;
+  
           color: black;
           font-weight: bold;
           justify-content: center;
@@ -243,7 +246,7 @@ height: 2rem;
           width: 132px;
           border:none;
           color: white;
-          font-size: large;
+         
           font-weight: bold;
           background-color: #0065fc;
           height: 100%;
@@ -268,7 +271,7 @@ height: 2rem;
 
       padding-top:1rem;
       width:60%;
-      font-size: 21px;
+   
       font-weight: bold;
  
     display: flex;
@@ -297,13 +300,15 @@ height: 2rem;
          gap:1rem;
     margin-left:1rem;
     
-          font-size: 21px;
+
           font-weight: bold;
         
         display: flex;
         justify-content: center;
  
         align-items: center;
+        flex-wrap: nowrap;
+        white-space : nowrap;
        
         border-radius: 2rem 2rem 2rem 2rem;
         border:solid 0.1rem #f2f2f2;
@@ -440,7 +445,7 @@ height: 2rem;
                     .Hebergements__listeG__cards__link__hotel__img {
                         border-radius: 2rem 2rem 0rem 0rem;
                         max-width: 100%;
-                        height: 124px;
+                        height: 100px;
                         object-fit:cover;
                         padding-left: 0;
                         }
@@ -564,7 +569,7 @@ height: 2rem;
                         object-fit:cover;
                         border-radius: 2rem 0rem 0rem 2rem;
                         width: 35%;
-                        height:10rem;
+                        height: 100px;
                     }
 
 
@@ -650,7 +655,7 @@ height: 2rem;
                   padding:0rem;
                     border-radius: 2rem 2rem 0rem 0rem;
                     width: 100%;
-                    height: 380px;
+                    height: 100px;
                     object-fit:cover;
 
                     
@@ -771,7 +776,7 @@ height: 2rem;
  display:flex;
 
 
- align-items: space-around;
+
   }
   .Hebergements__listeG__cards__link{
     width: 33%;
@@ -796,10 +801,7 @@ height: 2rem;
     padding-bottom: 0.8rem;
     justify-content: space-between;
   }
-  .Hebergements__listeG__cards__link__hotel__text__cardating{
-    padding: 0.5 ! important;
- 
-  }
+
   .Hebergements__listeG__afficherPlus{
 
     padding-left:2rem;
@@ -901,7 +903,7 @@ width: 100%;
   padding-right: 0.5rem;
   width: 100%;
   height: auto;
-font-size: auto;
+
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -978,7 +980,7 @@ width: 45%;
 
 .main{
   margin-top: 2.18rem;
-  font-size:auto;
+
 
 
 }
@@ -1008,7 +1010,7 @@ width: 45%;
     display:flex;
    
     color: white;
-    font-size: large;
+
     font-weight: bold;
     background-color: #0065fc;
    
@@ -1094,7 +1096,7 @@ align-items: flex-start;
 
      display: flex;
      flex-direction: column;
-     justify-content: auto;
+    
      flex-wrap: nowrap;
      width: 100%;
 
