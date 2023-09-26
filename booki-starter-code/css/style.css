@@ -927,8 +927,8 @@ width: 100%;
 .TrouvezHebergements{
   margin:0rem;
   margin-top: 1.87rem;
-  padding-left:2rem;
-  padding-right: 0.5rem;
+  padding-left:1.25rem;
+  padding-right: 1.25rem;
   width: 100%;
   height: auto;
 
@@ -946,7 +946,7 @@ gap:2.75rem;
   height: auto;
 }
 .TrouvezHebergements__form{
-
+width: 100% !important;
 }
 
 .TrouvezHebergements__form__btnRecherche{
@@ -956,6 +956,7 @@ gap:2.75rem;
 
 }
 .TrouvezHebergements__filtres{
+  width: 100%;
   padding-top: 0rem;
   gap:0rem;
   display:flex;
@@ -965,23 +966,21 @@ gap:2.75rem;
   
   row-gap: 1rem;
 
+
 ;
 
  
 }
-.TrouvezHebergements__filtres__titre {
-  width: 90%;
 
-
-}
 
 
 .TrouvezHebergements__filtres__buttons{
  padding:0rem;
  row-gap: 1rem;
+ column-gap:0.6rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   width: 100%;
 
@@ -995,10 +994,10 @@ gap:2.75rem;
 padding:0rem;
 margin-left: 0rem;
 
-margin-right: 0.5rem;
 
+width: 48%;
   /* white-space: no-wrap ; */
-width: 45%;
+
   height: 50px;
  
 
@@ -1024,7 +1023,8 @@ width: 45%;
   width: auto;
   background-color: white;
   padding-left: 0rem;
-  margin-left: -1rem;
+  padding-right: 0rem;
+
 }
 .TrouvezHebergements__form__input{
   width:90%;
@@ -1060,19 +1060,20 @@ width: 45%;
     height:fit-content;
    }
 
- .Hebergements__listeG__titre{
-  padding-left: 1rem;
-align-items: flex-start;
- }
+
    .Hebergements__listeG{
 
      display:flex;
      flex-direction: column;
      width: 100%;
      height: fit-content;
+     background-color: white;
 
    }
-
+   .Hebergements__listeG__titre{
+    padding-left: 1rem;
+  align-items: flex-start;
+   }
  
    .Hebergements__listeG__cards{
     display:flex;
@@ -1086,10 +1087,12 @@ align-items: flex-start;
    .Hebergements__listeG__cards__link{
     width: 100%;
     height: fit-content;
+
    }
 
   .Hebergements__listeG__cards__link__hotel{
     height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.75rem;
   }
   .Hebergements__listeG__cards__link__hotel__img{
    height: 124px;
@@ -1162,13 +1165,15 @@ padding:1rem;
 
 }
    .Activites{
+    padding:0rem;
+    margin-top: 2rem;
 height: fit-content;
     display:flex;
     flex-direction: column;
     width: 100%;
    }
    .Activites__titre{
-    padding-bottom:1rem;
+    padding:2rem;
    }
    .Activites__container{
    
@@ -1176,6 +1181,7 @@ height: fit-content;
     display: flex;
     flex-direction: column;
     width: auto;
+    gap:1rem;
    }
    .Activites__container__link{
     padding:1rem;
