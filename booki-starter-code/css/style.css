@@ -413,8 +413,8 @@ height: 2rem;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        row-gap: 2rem;
-        
+      
+   
        
         
 
@@ -422,7 +422,7 @@ height: 2rem;
         }
         .Hebergements__listeG__cards__link{
 
-       
+          padding-bottom:2rem;
        padding-left:1rem;
        padding-right: 1rem;
             height:50%;
@@ -496,6 +496,7 @@ height: 2rem;
                 .Hebergements__listeG__afficherPlus{
                             font-weight: bold;
                             padding-left: 1rem;
+                
                             display: flex;
                             flex-direction: column;
                             justify-content: center ;
@@ -823,7 +824,7 @@ height: 2rem;
   }
 
   .Hebergements__listeG__afficherPlus{
-
+    padding-top:2rem;
     padding-left:2rem;
     padding-bottom: 2rem;
   }
