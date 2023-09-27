@@ -416,7 +416,8 @@ align-items: flex-start;
         }
         .Hebergements__listeG__cards {
 
-        padding-left: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
        
    
         display: flex;
@@ -638,7 +639,7 @@ align-items: flex-start;
 
 }
 .Activites__titre{
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-bottom: 2rem;
 }
     .Activites__container{
@@ -873,7 +874,7 @@ align-items: flex-start;
   
   }
   .Activites__titre{
-    padding: 1rem;
+
   }
   .Activites__container__link{
 
