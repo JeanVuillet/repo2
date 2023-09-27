@@ -888,13 +888,21 @@ body{
  margin:0;
  padding:0;
 
+font-size: 14px;
 }
 
-
+h2{
+  font-size: 22px ;
+}
+h3{
+  font-size: 16px;
+}
 /*Taille des grands blocs*/
 .Header{
   margin:0rem;
-  padding:0rem;
+
+
+  padding:0rem ;
  padding-top: 2rem;
   display:flex;
   flex-direction: column;
@@ -907,11 +915,14 @@ width: 100%;
 
 .Header__hebAct{
   display: flex;
-  justify-content: space-around;
- 
-  width: 100%;}
+justify-content:center;
+ width: 100%;
+}
 
-
+.Header__hebAct>* {
+  width: 50%;
+  text-align: center;
+}
 
   .Header__hebAct>a:hover{
     border-top:none;
@@ -936,7 +947,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 
-gap:2.75rem;
+gap:2.2rem;
 
   
 }
@@ -1006,7 +1017,7 @@ width: 48%;
 }
 
 .main{
-  margin-top: 2.18rem;
+  
 
 
 
@@ -1058,6 +1069,7 @@ width: 48%;
     display:flex;
     flex-direction:column-reverse;
     height:fit-content;
+    margin-top:2.2rem;
    }
 
 
@@ -1069,9 +1081,15 @@ width: 48%;
      height: fit-content;
      background-color: white;
 
+
+
    }
    .Hebergements__listeG__titre{
+    padding:none;
+    padding-bottom:rem;
     padding-left: 1rem;
+
+    padding-top:1.25rem;
   align-items: flex-start;
    }
  
@@ -1082,11 +1100,13 @@ width: 48%;
     flex-wrap: nowrap;
     width: 100%;
     height: auto;
+    gap:1rem;
 
    }
    .Hebergements__listeG__cards__link{
     width: 100%;
     height: fit-content;
+    padding:0rem;
 
    }
 
@@ -1106,7 +1126,8 @@ width: 48%;
 
  
    .Hebergements__populaire {
-    padding-top:1.9rem ;
+
+    padding-bottom:0rem;
     margin-top:0;
     border-radius: 0;
     border-top:0;
@@ -1123,7 +1144,8 @@ width: 48%;
  padding: 0;
  padding-left:1rem;
  padding-right: 1rem;
-  
+ padding-bottom:1rem;
+ padding-top:2rem;
    }
  
    .Hebergements__populaire__container {
@@ -1133,6 +1155,9 @@ width: 48%;
     
      flex-wrap: nowrap;
      width: 100%;
+     gap:1rem;
+     padding-left:1.25rem;
+     padding-right: 1.25rem;
 
     }
     .Hebergements__populaire__container__link{
@@ -1166,7 +1191,7 @@ padding:1rem;
 }
    .Activites{
     padding:0rem;
-    margin-top: 2rem;
+  
 height: fit-content;
     display:flex;
     flex-direction: column;
@@ -1199,7 +1224,7 @@ height: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    margin-left: 1.25rem;
+   
    }
    .Footer div{
     width: auto;
