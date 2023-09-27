@@ -861,19 +861,25 @@ align-items: flex-start;
 
   }
   .Activites{
-   
   
+  
+  }
+  .Activites__titre{
+    padding: 1rem;
   }
   .Activites__container__link{
 
 
   }
 .Activites__container__link__imgText__img{
- height: 270px;
+ height: 200px;
 
 }
+.Activites__container__link__imgText__text{
+  height: 70px;
+}
  .Footer{
-
+  margin-top: 2.2rem;
  }
   }
 /* Small devices (phones, less than 768px) */
