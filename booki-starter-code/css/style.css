@@ -41,13 +41,7 @@ a {
 
 
 
-.card img {
- 
-}
 
-.card-title {
-
-}
 
 .euro {
   font-weight: 700;
@@ -360,11 +354,7 @@ height: 2rem;
 /*fin TrouvzHebergement*/
 
 /*********************** MAIN ***********************************/
-.main {
-    
-   
-   
-}
+
 
 
 /*******************PARTIE I HEBERGEMENTS***********************/
@@ -459,11 +449,7 @@ align-items: flex-start;
 
             }
                 /* .Hebergements__listeG__cards__link__hotel__link*/
-                .Hebergements__listeG__cards__link__hotel{
-                    
-                
-
-                }
+            
                 
                     .Hebergements__listeG__cards__link__hotel__img {
                         border-radius: 2rem 2rem 0rem 0rem;
@@ -613,9 +599,7 @@ align-items: flex-start;
                       justify-content: flex-start; 
                    
                     }
-                    .Hebergements__populaire__container__link__hotel__text__titrePrix__titre{
-
-                    }
+              
                     .Hebergements__populaire__container__link__hotel__text__titrePrix__prix{
                      padding-top:0.5rem;
                     }
@@ -707,9 +691,7 @@ align-items: flex-start;
   height: 60%;
 }
 
-.sectionActivites img {
-  
-}
+
 
 /***************************FOOTER*******************************************/
 
@@ -761,9 +743,7 @@ align-items: flex-start;
     body{
   
     }
-.Header{
 
-}
 .Header__hebAct{
   width:25%;
 }
@@ -782,10 +762,7 @@ align-items: flex-start;
   font-size:smaller ;
 }
 
-  .main{
-
-   
-  }
+ 
   .Hebergements {
 
 
@@ -869,17 +846,7 @@ align-items: flex-start;
     width: 100%;
 
   }
-  .Activites{
-  
-  
-  }
-  .Activites__titre{
 
-  }
-  .Activites__container__link{
-
-
-  }
 .Activites__container__link__imgText__img{
  height: 200px;
 
@@ -947,9 +914,7 @@ justify-content:center;
   #loupe {
     display: flex;
   }
-.Header__logo{
-  
-}
+
 .TrouvezHebergements{
   margin:0rem;
   margin-top: 1.87rem;
@@ -1031,12 +996,7 @@ width: 48%;
 
 }
 
-.main{
-  
 
-
-
-}
 
 
 
@@ -1194,16 +1154,10 @@ height:146px;
     .Hebergements__populaire__container__link__hotel__text__cardating{
 padding:1rem;
     }
-   .Hebergements__populaire__container__link__hotel>h3{
-    
-   }
+  
  
-   .Hebergements__populaire__container__link__hotel>p {
-   
-   }
-.Hebergements__populaire__container__link__hotel__img{
+ 
 
-}
    .Activites{
     padding:0rem;
   
