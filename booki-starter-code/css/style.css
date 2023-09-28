@@ -1101,8 +1101,8 @@ width: 48%;
    }
    .Hebergements__listeG__titre{
     padding:none;
-    padding-bottom:rem;
-    padding-left: 1rem;
+
+    padding-left: 1.25rem;
 
     padding-top:1.25rem;
   align-items: flex-start;
@@ -1157,8 +1157,8 @@ width: 48%;
    }
    .Hebergements__populaire__titreEtLogo{
  padding: 0;
- padding-left:1rem;
- padding-right: 1rem;
+ padding-left:1.25rem;
+ padding-right: 1.25rem;
  padding-bottom:1rem;
  padding-top:2rem;
    }
