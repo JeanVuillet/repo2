@@ -126,7 +126,7 @@ height: 2rem;
 
 
     .Header__hebAct a{
-      border-top:solid white;
+      border-top:solid 0.31rem white;
       padding-top:0.7rem;
 
     }
